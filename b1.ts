@@ -41,13 +41,13 @@ function calcOutcome(player1: string, player2: string) {
 }
 
 function main() {
-  let totalScore = 0;
+  let score = 0;
   for (const moves of rounds) {
     const [opponent, you] = moves.split(" ");
-    totalScore += kv.get(you) ?? 0;
-    totalScore += calcOutcome(opponent, you);
+    score += kv.get(you) ?? 0;
+    score += calcOutcome(opponent, you);
   }
-  console.log("Total Score: ", totalScore);
+  console.log("Score: ", score);
 }
 
 main();
