@@ -1,19 +1,12 @@
 const input = await Deno.readTextFile("a.txt");
-const calories = input.split(/\r?\n/);
-console.log(calories);
+const calories = input.replace(/\r/g, "").trim().split(/\n\n/);
 
-let sum = 0;
 const elves = [];
-
-for (const val of calories) {
-  if (val === "") {
-    elves.push(sum);
-    sum = 0;
-  } else {
-    sum += parseInt(val);
-  }
+for (const c of calories) {
+  const temp = c.split("\n").map(Number);
+  const sum = temp.reduce((prev, curr) => prev + curr, 0);
+  elves.push(sum);
 }
-elves.push(sum);
 elves.sort((a, b) => b - a);
 
 const topThreeElves = elves.slice(0, 3);
