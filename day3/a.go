@@ -24,7 +24,7 @@ func main() {
 		s2 := s[len(s)/2:]
 		for _, val := range s1 {
 			if strings.Contains(s2, string(val)) {
-				sum += getPrority(val)
+				sum += getPriority(val)
 				break
 			}
 		}
@@ -32,7 +32,7 @@ func main() {
 	fmt.Println(sum)
 }
 
-func getPrority(r rune) int {
+func getPriority(r rune) int {
 	p := int(unicode.ToLower(r) - 96)
 	if unicode.IsUpper(r) {
 		p += 26
