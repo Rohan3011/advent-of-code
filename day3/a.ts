@@ -1,4 +1,4 @@
-const input = await Deno.readTextFile("c.txt");
+const input = await Deno.readTextFile("input.txt");
 const rucksacks = input.split(/\r?\n/);
 // console.log(rucksacks);
 

@@ -1,4 +1,4 @@
-const input = await Deno.readTextFile("d.txt");
+const input = await Deno.readTextFile("input.txt");
 const pairs = input.trim().split(/\r?\n/);
 
 function main() {

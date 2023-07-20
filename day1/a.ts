@@ -1,4 +1,4 @@
-const input = await Deno.readTextFile("a.txt");
+const input = await Deno.readTextFile("input.txt");
 const calories = input.replace(/\r/g, "").trim().split(/\n\n/);
 
 const elves = [];

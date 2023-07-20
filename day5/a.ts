@@ -1,4 +1,4 @@
-const input = await Deno.readTextFile("e.txt");
+const input = await Deno.readTextFile("input.txt");
 const data = input.split(/\r?\n/);
 const moves = data.map((s) => s.split(" "));
 // console.log(moves);
