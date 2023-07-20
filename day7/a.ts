@@ -25,14 +25,14 @@ function main() {
   //   console.log(kv);
 
   const dirs: Record<string, number> = {};
-  for (let x in kv) {
-    for (let u of x) {
+  for (const x in kv) {
+    for (const u of x) {
       dirs[u] = (Object.keys(dirs).includes(u) ? dirs[u] : 0) + kv[x];
     }
   }
 
   console.log(dirs);
-  for (let x in dirs) {
+  for (const x in dirs) {
     if (dirs[x] <= LIMIT) total += dirs[x];
   }
   console.log("Total: ", total);

@@ -10,5 +10,5 @@ for (const c of calories) {
 elves.sort((a, b) => b - a);
 
 const topThreeElves = elves.slice(0, 3);
-const totalCalories = topThreeElves.reduce((prev, curr) => prev + curr);
+const totalCalories = topThreeElves.reduce((sum, curr) => sum + curr);
 console.log(totalCalories);
