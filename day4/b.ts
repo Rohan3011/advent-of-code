@@ -2,15 +2,15 @@ const input = await Deno.readTextFile("input.txt");
 const pairs = input.trim().split(/\r?\n/);
 
 function main() {
-  let count = 0;
+  let overlapCount = 0;
   pairs.map((s) => {
     const sections = s.split(/,|-/);
     const [a, b, x, y] = sections.map(Number);
-    if ((a <= x && b >= y) || (x <= a && y >= b)){
-      count++;
+    if ((b >= x && a <= y)|| (y >= a && x <= b)){
+      overlapCount++;
     }
   });
-  console.log("Count: ", count);
+  console.log("overlap count: ", overlapCount);
 }
 
 main();
