@@ -14,15 +14,15 @@ const moves = data.map((s) => s.split(" "));
 //  1   2   3   4   5   6   7   8   9
 const state = [
   "",
-  "DTWFJSHN",
-  "HRPQTNBG",
-  "LQV",
-  "NBSWRQ",
-  "NDFTVMB",
-  "MDBVHTR",
-  "DBQJ",
-  "DNJVRZHQ",
-  "BNHMS",
+  "QWPSZRHD",
+  "VBRWQHF",
+  "CVSH",
+  "HFG",
+  "PGJBZ",
+  "QTJHWFL",
+  "ZTWDLVJN",
+  "DTZCJGHF",
+  "WPVMBH",
 ];
 
 function main() {

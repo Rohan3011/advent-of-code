@@ -21,6 +21,6 @@ func main() {
 		if (a <= x && b >= y) || (x <= a && y >= b) {
 			fullyContainedCount++
 		}
-	}
+}
 	fmt.Printf("count: %d\n", fullyContainedCount)
 }
