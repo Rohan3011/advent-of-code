@@ -1,2 +1,5 @@
 go.work
 *.exe
+
+
+node_modules
